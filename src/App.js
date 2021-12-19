@@ -1,22 +1,15 @@
-import logo from './logo.svg';
+import reactTriforce from './presentation/assets/images/login/react-triforce.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Taller Practico: React (nivel básico)</h1>
+        <img src={reactTriforce} className="App-topic" alt="reactTriforce" />        
         <p>
-          Edit <code>src/App.js</code> and save to reload. see changes.
+          Objetivo:  Desarrollar un juego con sus respectivo protagonista, niveles e items. Los estudiantes podrán decidir que nivel hacer. Se explicara en que consiste cada jefe, los items que suelta al ser derrotado. También se les facilitara las instrucciones para el motor y el sistema de cofres. Sin embargo, no es necesario desarrollarlo puesto que eso lo tendrá listo el docente al momento del encuentro con los estudiantes.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
