@@ -1,0 +1,15 @@
+
+> sharp@0.28.3 install C:\Users\edgarin\Documents\GIT_PROJECTS\SENA\react-heroes-game-sena-digital\node_modules\sharp
+> (node install/libvips && node install/dll-copy && prebuild-install) || (node install/can-compile && node-gyp rebuild && node install/dll-copy)
+
+sharp: Downloading https://github.com/lovell/sharp-libvips/releases/download/v8.10.6/libvips-8.10.6-win32-x64.tar.br
+sharp: Creating C:\Users\edgarin\Documents\GIT_PROJECTS\SENA\react-heroes-game-sena-digital\node_modules\sharp\build\Release
+sharp: Copying DLLs from C:\Users\edgarin\Documents\GIT_PROJECTS\SENA\react-heroes-game-sena-digital\node_modules\sharp\vendor\8.10.6\lib to C:\Users\edgarin\Documents\GIT_PROJECTS\SENA\react-heroes-game-sena-digital\node_modules\sharp\build\Release
++ favicons@6.2.2
+added 132 packages from 309 contributors and audited 1839 packages in 47.146s
+
+203 packages are looking for funding
+  run `npm fund` for details
+
+found 9 vulnerabilities (8 moderate, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
