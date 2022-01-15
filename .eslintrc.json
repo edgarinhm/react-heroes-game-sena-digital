@@ -5,9 +5,16 @@
         }
     },
     "extends": [
-        "standard-with-typescript",
         "plugin:react/recommended",
-        "plugin:cypress/recommended"
+        "plugin:react-hooks/recommended",
+        "plugin:cypress/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:eslint-comments/recommended",
+        "plugin:prettier/recommended"
     ],
     "env": {
         "cypress/globals": true
@@ -29,6 +36,14 @@
         "no-redeclare": "off",
         "import/export": "off",
         "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error"
+        "react/jsx-uses-vars": "error",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error"
+        ],
+        "@typescript-eslint/no-var-requires": "off",
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
     }
 }

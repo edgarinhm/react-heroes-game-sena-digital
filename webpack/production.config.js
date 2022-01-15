@@ -1,16 +1,19 @@
 const MinicssExtractPlugin = require('mini-css-extract-plugin');
-const { merge } = require('webpack-merge');
-const common = require('./webpack.common');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-/** @type {import('webpack').Configuration} */
-const prodConfig = {
+module.exports = {
     mode: 'production',
     optimization: {
         splitChunks: {
             chunks: 'all',
         },
     },
-    plugins: [new MinicssExtractPlugin()],
+    plugins: [
+        new MinicssExtractPlugin(),
+        new HtmlWebpackPlugin({
+            template: './public/index.html',
+        }),
+    ],
     module: {
         rules: [
             {
@@ -20,5 +23,3 @@ const prodConfig = {
         ],
     },
 };
-
-module.exports = merge(common, prodConfig);
