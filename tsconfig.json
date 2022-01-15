@@ -28,9 +28,12 @@
     },
     "include": [
         "src",
-        "tests"
+        "tests",
+        "webpack.config.js",
+        "webpack/development.config.js",
+        "webpack/production.config.js",
     ],
     "exclude": [
-        "tests/e2e/cypress"
+        "tests/e2e/cypress",
     ]
 }

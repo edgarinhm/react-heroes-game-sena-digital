@@ -1,14 +1,14 @@
-import { atom } from 'recoil'
+import { atom } from 'recoil';
 
 export const loginState = atom({
-    key: 'loginState',
-    default: {
-        isLoading: false,
-        isFormInvalid: true,
-        email: '',
-        password: '',
-        emailError: '',
-        passwordError: '',
-        mainError: ''
-    }
-})
+  key: 'loginState',
+  default: {
+    isLoading: false,
+    isFormInvalid: true,
+    email: '',
+    password: '',
+    emailError: '',
+    passwordError: '',
+    mainError: '',
+  },
+});

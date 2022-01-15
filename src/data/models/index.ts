@@ -1,1 +1,1 @@
-export * from './remote-survey-result-model'
+export * from './remote-survey-result-model';

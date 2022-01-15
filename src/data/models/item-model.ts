@@ -1,4 +1,4 @@
 export type ItemModel = {
-    name: string
-    description: string
-}
+  name: string;
+  description: string;
+};

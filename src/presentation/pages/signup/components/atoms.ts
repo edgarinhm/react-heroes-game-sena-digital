@@ -1,4 +1,4 @@
-import { atom } from 'recoil'
+import { atom } from 'recoil';
 
 export const signUpState = atom({
   key: 'signUpState',
@@ -13,6 +13,6 @@ export const signUpState = atom({
     emailError: '',
     passwordError: '',
     passwordConfirmationError: '',
-    mainError: ''
-  }
-})
+    mainError: '',
+  },
+});
