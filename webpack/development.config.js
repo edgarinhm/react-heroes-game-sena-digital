@@ -8,9 +8,8 @@ module.exports = {
     devMiddleware: {
       writeToDisk: true,
     },
-    port: 3000,
+    port: 8080,
     static: '../build',
-    open: 'chrome',
     compress: true,
     client: {
       overlay: true,
