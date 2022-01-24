@@ -16,9 +16,9 @@ let gameObject = {
   },
 }
 */
-
+/*
 function ornstein(gameObject) {
-  /*
+  
       - Recibe un objeto con la información del juego (estadísticas de vida e inventario)
       - Ornstein SIEMPRE ataca
       - El daño de su ataque puede ser esquivado si el héroe posee un escudo
@@ -32,11 +32,11 @@ function ornstein(gameObject) {
       - Si el héroe usa el escudo: un mensaje de contra ataque
       
       La función retorna un game object actualizado (stats e inventario)
-    */
-}
-
+    
+}*/
+/*
 function obtenerEscudo(gameObject) {
-  /*
+  
       - Este item se obtiene sobre una relacion del valor de fuerza.
       - Si el valor de fuerza del héroe es menor o igual 5: 80% probabilidad de sumar 1 estaca, 20% de no obtener nada.
       - La condicion es inversa si fuerza es mayor a 5
@@ -49,5 +49,5 @@ function obtenerEscudo(gameObject) {
       - El 20% de probabilidad se considera cierto si el número random esta entre 1 y 2 inclusive.
       
         La función obtenerGlobo retorna un game object actualizado (stats e inventario)
-    */
-}
+    
+}*/

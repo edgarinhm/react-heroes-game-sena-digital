@@ -16,26 +16,26 @@ let gameObject = {
   },
 }
 */
-
-// Afecta carisma
-function veigar(gameObject) {
-  /*
-    - Veigar puede ser eliminado si se usa una linterna en su contra.
-    - Se obtiene +5 en carisma veigar es eliminado.
-    - Si se usa una linterna, recuerda actualizar el inventario.
-    - Si no se tiene una linterna, veigar atacara, lo cual disminuira la carisma en -10
-    - Si veigar ataca y la carisma es igual o menor a 0, restar -2 en todos los atributos restantes
+/*
+// Afecta fuerza
+function zombie(gameObject) {
+  
+    - Zombie puede ser eliminado si se usa un ECTO-1 en su contra.
+    - Se obtiene +5 en fuerza si zombie es eliminado.
+    - Si se usa ecto, recuerda actualizar el inventario.
+    - Si no se tiene el item, zombie atacara, lo cual disminuira la fuerza en -10
+    - Si zombie ataca y la fuerza es igual o menor a 0, restar -2 en todos los atributos restantes
     Imprimir cada accion en la consola:
-    - Si veigar ataca. 
-    - Si veigar fue eliminado usando una linterna.
-    - Cantidad de linternas restantes
+    - Si zombie ataca. 
+    - Si zombie fue eliminado usando ecto-1.
+    - Cantidad de estacas restantes
     
      La función retorna un game object actualizado (stats e inventario)
-  */
-}
-
-function obtenerLinterna(gameObject) {
-  /*
+  
+}*/
+/*
+function obtenerEcto(gameObject) {
+  
     - Este item se obtiene sobre una relacion del valor de fuerza.
     - Si el valor de fuerza del héroe es menor o igual 5: 80% probabilidad de sumar 1 estaca, 20% de no obtener nada.
     - La condicion es inversa si fuerza es mayor a 5
@@ -48,5 +48,5 @@ function obtenerLinterna(gameObject) {
     - El 20% de probabilidad se considera cierto si el número random esta entre 1 y 2 inclusive.
     
       La función obtenerGlobo retorna un game object actualizado (stats e inventario)
-  */
-}
+  
+}*/

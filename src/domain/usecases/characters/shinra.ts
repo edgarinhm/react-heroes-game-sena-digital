@@ -16,10 +16,10 @@ let gameObject = {
   },
 }
 */
-
+/*
 // afecta inteligencia
 function shinra(gameObject) {
-  /*
+  
       - Shinra puede ser eliminado si se usa una granada extintora en su contra.
       - Se obtiene +5 en inteligencia si shinra es eliminado.
       - Si se usa una granada, recuerda actualizar el inventario.
@@ -31,11 +31,11 @@ function shinra(gameObject) {
       - Cantidad de granadas restantes
       
        La función retorna un game object actualizado (stats e inventario)
-    */
-}
-
+    
+}*/
+/*
 function obtenerGranada(gameObject) {
-  /*
+  
       - Este item se obtiene sobre una relacion del valor de fuerza.
       - Si el valor de fuerza del héroe es menor o igual 5: 80% probabilidad de sumar 1 estaca, 20% de no obtener nada.
       - La condicion es inversa si fuerza es mayor a 5
@@ -48,5 +48,5 @@ function obtenerGranada(gameObject) {
       - El 20% de probabilidad se considera cierto si el número random esta entre 1 y 2 inclusive.
       
         La función obtenerGlobo retorna un game object actualizado (stats e inventario)
-    */
-}
+    
+}*/

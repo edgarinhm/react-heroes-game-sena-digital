@@ -1,25 +1,31 @@
-/*
-Contrato para el gameObject:
-let gameObject = {
-  stats : {
-    carisma: 20,
-    fuerza: 20,
-    estilo: 20,
-    inteligencia: 20
-  },
-  items : {
-    linternas: 0,
-    ecto: 0,
-    espejos: 0,
-    granada: 0,
-    escudo: false, 
-  },
-}
-*/
+import { CharacterModel, GameObjectModel } from '@/domain/models';
 
+export interface Character {
+  /* ivy: (params: Character.Params) => Promise<Character.Model>; */
+  getItem: (
+    gameConfig: Character.GameObject,
+    character: Character.Model
+  ) => Promise<Character.GameObject>;
+  attack: (
+    gameConfig: Character.GameObject,
+    character: Character.Model
+  ) => Promise<Character.GameObject>;
+}
+
+export namespace Character {
+  export type Params = {
+    name: string;
+    type: string;
+    level: number;
+    force: number;
+  };
+
+  export type Model = CharacterModel;
+  export type GameObject = GameObjectModel;
+}
 // Afecta estilo
-function ivy(gameObject) {
-  /*
+/*function ivy(gameObject) {
+  
       - Ivy puede ser eliminada si se usa un espejo en su contra.
       - Se obtiene +5 en estilo si ivy es eliminado.
       - Si se usa un espejo, recuerda actualizar el inventario.
@@ -30,12 +36,12 @@ function ivy(gameObject) {
       - Si ivy fue eliminada usando espejo.
       - Cantidad de espejos restantes
       
-       La función retorna un game object actualizado (stats e inventario)
-    */
-}
-
+      La función retorna un game object actualizado (stats e inventario)
+    
+}*/
+/*
 function obtenerEspejo(gameObject) {
-  /*
+
       - Este item se obtiene sobre una relacion del valor de fuerza.
       - Si el valor de fuerza del héroe es menor o igual 5: 80% probabilidad de sumar 1 estaca, 20% de no obtener nada.
       - La condicion es inversa si fuerza es mayor a 5
@@ -48,5 +54,5 @@ function obtenerEspejo(gameObject) {
       - El 20% de probabilidad se considera cierto si el número random esta entre 1 y 2 inclusive.
       
         La función obtenerGlobo retorna un game object actualizado (stats e inventario)
-    */
-}
+    
+}*/
