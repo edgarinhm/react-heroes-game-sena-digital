@@ -7,7 +7,7 @@ module.exports = (env, { mode }) => {
   const path = require('path');
 
   const commonConfig = {
-    entry: './src/index.tsx',
+    entry: './src/main/index.tsx',
     output: {
       path: path.resolve(__dirname, 'build'),
       filename: isProduction ? '[name].[contenthash].js' : 'main.js',
