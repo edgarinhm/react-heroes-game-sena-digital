@@ -21,14 +21,23 @@ module.exports = {
   module: {
     rules: [
       {
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+          'sass-loader',
+        ],
         test: /.(css|sass|scss)$/,
       },
     ],
   },
   plugins: [
     new DefinePlugin({
-      API_URL: JSON.stringify('http://fordevs.herokuapp.com/api'),
+      'process.env.API_URL': JSON.stringify('http://fordevs.herokuapp.com/api'),
     }),
     new HtmlWebpackPlugin({
       template: './public/template.dev.html',

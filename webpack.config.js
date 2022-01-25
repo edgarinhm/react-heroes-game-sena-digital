@@ -11,7 +11,7 @@ module.exports = (env, { mode }) => {
     output: {
       path: path.resolve(__dirname, 'build'),
       filename: isProduction ? '[name].[contenthash].js' : 'main.js',
-      publicPath: '',
+      publicPath: '/',
     },
     resolve: {
       extensions: ['.tsx', '.ts', '.js', '.jsx', '.json', 'scss'],

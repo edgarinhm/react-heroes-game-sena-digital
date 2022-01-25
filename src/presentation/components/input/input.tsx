@@ -35,15 +35,20 @@ const Input: React.FC<Props> = ({ state, setState, ...props }: Props) => {
           setState({ ...state, [e.target.name]: e.target.value });
         }}
       />
-      <label
-        data-testid={`${props.name}-label`}
+      <div
+        role="button"
         onClick={() => {
           inputRef.current.focus();
         }}
-        title={error}
+        onKeyPress={() => {
+          inputRef.current.focus();
+        }}
+        tabIndex={0}
       >
-        {props.placeholder}
-      </label>
+        <label data-testid={`${props.name}-label`} title={error}>
+          {props.placeholder}
+        </label>
+      </div>
     </div>
   );
 };

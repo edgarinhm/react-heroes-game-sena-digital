@@ -19,7 +19,7 @@ const Login: React.FC<Props> = ({ validation, authentication }: Props) => {
   const navigate = useNavigate();
   const [state, setState] = useRecoilState(loginState);
 
-  useEffect(() => resetLoginState(), []);
+  useEffect(() => resetLoginState(), [resetLoginState]);
   useEffect(() => validate('email'), [state.email]);
   useEffect(() => validate('password'), [state.password]);
 
