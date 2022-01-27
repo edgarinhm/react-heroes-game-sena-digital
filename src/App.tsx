@@ -1,11 +1,14 @@
-import reactTriforce from './presentation/assets/images/login/react-triforce.png';
+import reactTriforce from './assets/images/login/react-triforce.png';
 import './App.css';
 
+import { useTranslation } from 'react-i18next';
+
 function App() {
+  const { t } = useTranslation();
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Taller Practico: React (nivel básico)</h1>
+        <h1>{t('lbAppTitle')}</h1>
         <img src={reactTriforce} className="App-topic" alt="reactTriforce" />
         <p>
           Objetivo: Desarrollar un juego con sus respectivo protagonista, niveles e items. Los
